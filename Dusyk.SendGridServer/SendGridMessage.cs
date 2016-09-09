@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace Dusyk.SendGridServer
+namespace Dusyk.SendGridService
 {
 	// https://github.com/sendgrid/sendgrid-csharp/issues/221
 	public class SendGridMessage
@@ -15,7 +12,9 @@ namespace Dusyk.SendGridServer
 		public SendGridEmail From { get; set; }
 		public List<SendGridContent> Content { get; set; }
 
-		public SendGridMessage() { }
+		public SendGridMessage()
+		{
+		}
 
 		public SendGridMessage(SendGridEmail to, string subject, SendGridEmail from, string message, string type = "text/html")
 		{

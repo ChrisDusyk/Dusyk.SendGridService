@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Dusyk.SendGridServer
+﻿namespace Dusyk.SendGridService
 {
 	public class SendGridEmail
 	{
 		public string Email { get; set; }
 		public string Name { get; set; }
 
-		public SendGridEmail() { }
+		public SendGridEmail()
+		{
+		}
 
 		public SendGridEmail(string email, string name = null)
 		{
